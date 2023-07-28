@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/Logo_HCMUNRE.png' %}"/>
+    <title>{% block title %} {% endblock %}</title>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css"/>
+
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/progressbar_barfiller.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/gijgo.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/animated-headline.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
+</head>
+<body>
+<!-- ? Preloader Start -->
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="{% static 'img/logo/loder.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Preloader Start -->
+<header>
+    <!-- Header Start -->
+    <div class="header-area header-transparent">
+        <div class="main-header ">
+            <div class="header-bottom  header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="/"><img src="{% static 'img/logo/logo.png' %}" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                                            <li><a href="/blog">Blog</a>
+                                                <ul class="submenu">
+                                                    <li><a href="/blog">Blog</a></li>
+                                                    <li><a href="/blog_details">Blog Details</a></li>
+                                                    <li><a href="/elements">Element</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/contact">Contact</a></li>
+                                            <!-- Button -->
+                                            <li class="button-header margin-left "><a href="/login" class="btn">Join</a>
+                                            </li>
+                                            <li class="button-header"><a href="/login" class="btn btn3">Login</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+</header>
+{% block content %}
+
+{% endblock %}
+<footer>
+    <div class="footer-wrappper footer-bg">
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo mb-25">
+                                    <a href="/index"><img src="{% static 'img/logo/logo2_footer.png' %}" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p>Ho Chi Minh City National Academy of Education Management</p>
+                                    </div>
+                                </div>
+                                <!-- social -->
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/hcmunre"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Our solutions</h4>
+                                <ul>
+                                    <li><a href="#">International Cooperation</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Educate</a></li>
+                                    <li><a href="#">Foresting</a></li>
+                                    <li><a href="#">Science and Technology</a></li>
+                                    <li><a href="#">Student</a></li>
+                                    <li><a href="#">Digital Library</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer End-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Scroll Up -->
+<div id="back-top">
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+<!-- JS here -->
+<script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}" type="text/javascript"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/popper.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+<!-- Jquery Mobile Menu -->
+<script src="{% static 'js/jquery.slicknav.min.js' %}" type="text/javascript"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="{% static 'js/owl.carousel.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/slick.min.js' %}" type="text/javascript"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="{% static 'js/wow.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/animated.headline.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.magnific-popup.js' %}" type="text/javascript"></script>
+
+<!-- Date Picker -->
+<script src="{% static 'js/gijgo.min.js' %}" type="text/javascript"></script>
+<!-- Nice-select, sticky -->
+<script src="{% static 'js/jquery.nice-select.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.sticky.js' %}" type="text/javascript"></script>
+<!-- Progress -->
+<script src="{% static 'js/jquery.barfiller.js' %}" type="text/javascript"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="{% static 'js/jquery.counterup.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/waypoints.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/hover-direction-snake.min.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'js/jquery.vide.js' %}" type="text/javascript"></script>
+<!-- contact js -->
+<script src="{% static 'js/contact.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.form.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/mail-script.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}" type="text/javascript"></script>
+
+<!-- Jquery Plugins, main Jquery -->
+<script src="{% static 'js/plugins.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+</body>
+</html>

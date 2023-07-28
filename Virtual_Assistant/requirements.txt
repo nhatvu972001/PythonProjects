@@ -1,0 +1,10 @@
+datetime
+os
+sys
+time
+webbrowser
+pywhatkit
+pyttsx3
+requests
+speech_recognition
+wikipedia

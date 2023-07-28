@@ -1,0 +1,47 @@
+{% extends "pages/base.html" %}
+{% block title %} Register {% endblock %}
+{% block content %}
+    {% load static %}
+
+
+    <main class="login-body" data-vide-bg="{% static 'img/login-bg.mp4' %}">
+        <!-- Login Admin -->
+        <form class="form-default" method="POST" action="/new">
+            {% csrf_token %}
+            {{ form }}
+            <div class="login-form">
+                <form class="form-default">
+                    <!-- logo-login -->
+                    <div class="logo-login">
+                        <a href="/index"><img src="{% static 'img/logo/loder.png' %}" ></a>
+                    </div>
+                    <h2>Registration Here</h2>
+                    # Hiển thị dữ liệu cào về
+                    <div class="form-input">
+                        <label for="name">Full name</label>
+                        <input name="TenND" type="text" placeholder="Full name">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Email Address</label>
+                        <input name="Email" type="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-input">
+                        <label for="name">Password</label>
+                        <input name="MatKhau" type="password" placeholder="Password">
+                    </div>
+                </form>
+                    <div class="form-input">
+                        <label for="name">Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-input pt-30">
+                        <input type="submit"  value="Registration">
+                    </div>
+                    <!-- Forget Password -->
+
+
+            </div>
+        </form>
+        <!-- /end login form -->
+    </main>
+{% endblock %}

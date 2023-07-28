@@ -1,0 +1,22 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="home.views.KhachHang" />
+          <option value="home.forms.KhachHang" />
+          <option value="KhachHang" />
+          <option value="home.forms.UserCreationForm" />
+          <option value="sklearn.externals.joblib" />
+          <option value="classify.sklearn" />
+          <option value="joblib" />
+          <option value="pandas" />
+          <option value="model_tfidf.sklearn" />
+          <option value="training.sklearn" />
+          <option value="models.exception" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

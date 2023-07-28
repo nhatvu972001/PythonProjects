@@ -1,0 +1,37 @@
+{% extends "pages/base.html" %}
+{% block title %} Login {% endblock %}
+{% block content %}
+    {% load static %}
+    <main class="login-body" data-vide-bg="{% static 'img/login-bg.mp4' %}">
+        <!-- Login Admin -->
+        <form class="form-default" method="POST" action="/loginacc">
+            {% csrf_token %}
+            {{ form }}
+            <div class="login-form">
+                <!-- logo-login -->
+                <div class="logo-login">
+                    <a href="/index"><img src="{% static 'img/logo/loder.png' %}" alt=""></a>
+                </div>
+                <h2>Login Here</h2>
+                <div class="form-input">
+                    <label for="name">Email</label>
+                    <input type="email" name="Email" placeholder="Email">
+                </div>
+                <div class="form-input">
+                    <label for="name">Password</label>
+                    <input type="password" name="MatKhau" placeholder="Password">
+                </div>
+                <div class="form-input pt-30">
+                    <input href="/index" type="submit" value="login">
+                </div>
+                <!-- Forget Password -->
+                <a href="#" class="forget">Forget Password</a>
+                <!-- Forget Password -->
+                <a href="/register" class="registration">Registration</a>
+            </div>
+        </form>
+        <!-- /end login form -->
+    </main>
+
+
+{% endblock %}
